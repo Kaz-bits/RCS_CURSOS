@@ -1,4 +1,4 @@
-# Paqueterías
+# PaqueterÃ­as
 library(ggplot2)
 
 # Cargar archivos
@@ -22,10 +22,7 @@ color_lines <- c("#bef7ff", "#81ade2", "#4562c5", "#0818a8")
 # Generar vector para agregar a la leyenda
 NaCl_lines <- c("0", "0.5", "1", "1.5")
 
-# Obtener datos de 5 en 5 del data frame
-df_rep1 <- df_rep1[seq(1, 91, 5), ]
-
-# Guardar elementos repetidos del gráfico en una función
+# Guardar elementos repetidos del grÃ¡fico en una funciÃ³n
 spectrum_aes <- function() {
   list(
     # Compound 0 mM
@@ -56,20 +53,20 @@ spectrum_aes <- function() {
 }
 
 
-# Crear gráficos con la función spectrum_aes
-# Gráfico 1
+# Crear grÃ¡ficos con la funciÃ³n spectrum_aes
+# GrÃ¡fico 1
 ggplot(data = df_rep1[seq(1, 91, 5), ]) +
   spectrum_aes()
 
-# Gráfico 2
+# GrÃ¡fico 2
 ggplot(data = df_rep2[seq(1, 91, 5), ]) +
   spectrum_aes()
 
-# Gráfico 3
+# GrÃ¡fico 3
 ggplot(data = df_rep3[seq(1, 91, 5), ]) +
   spectrum_aes()
 
-# Guardar gráfico
+# Guardar grÃ¡fico
 ggsave(filename = "/home/kaz-bits/Desktop/spectrum_rep1.pdf", 
        device = "pdf", units = "in", width = 6, height = 4, 
        dpi = 450)
