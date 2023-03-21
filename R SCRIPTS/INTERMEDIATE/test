@@ -1,0 +1,87 @@
+# Crear una variable llamda var
+var <- 24
+
+# Sintaxis de un condicional 
+if (TRUE) {
+  print(var + 10)
+  print(var - 10)
+}
+
+# Evaluar un valor mayor a 25
+if (var == 25) {
+  print("El valor es 25")
+}
+
+if (var == 26) {
+  print("El valor es 25")
+}
+
+
+# Función paste
+paste("Mi edad es:", var, "años")
+
+# Crear tres variables
+str1 <- "'Si quieres dominar un hábito"
+str2 <- "la clave es empezar con la repetición del mismo,"
+str3 <- "no con la perfección'"
+
+# Concatenar las variables str1, str2 y str3
+paste(str1, str2, str3)
+
+# Crear una nueva variable llamda "num"
+num <- 1
+
+# Condicional if para evaluar variable "num"
+if (num %% 2 == 0) {
+  print("Es un número par")
+  print(paste("El valor es:", num))
+}
+
+# Función paste0
+paste0(str1, str2, str3)
+
+# Comparar función paste y paste0
+paste(1, 2, 3, 4, 5)
+paste0(1, 2, 3, 4, 5)
+
+# Argumentos de paste()
+paste(1, 2, 3, 4, 5, sep = "/")
+paste(c(1, 2, 3, 4, 5), collapse = "-")
+
+# Generar un valor aleatorio entre 1 y 5
+sample(x = 1:5, size = 1)
+sample(x = 1:1000, size = 10)
+
+# Asegurar reproducibilidad del código
+set.seed(1)
+sam <- sample(x = 1:10, size = 1)
+
+# Adivinar el número
+if (sam == 6) {
+  print("¡Ganaste!")
+}
+
+# Condicional if-else
+if (condition) {
+  
+} else {
+  
+}
+
+# Condicional if para valor TRUE
+if (TRUE) {
+  print(var + 10)
+}
+
+# Condicinal if-else para valor FALSE
+if (FALSE) {
+  print(var + 10)
+} else {
+  print(var - 10)
+}
+
+
+
+
+
+
