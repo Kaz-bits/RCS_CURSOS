@@ -82,6 +82,76 @@ if (FALSE) {
 
 
 
+# Crear variable "nat"
+nat <- -2
+
+# Sentencia if anidada
+if (nat > 0) {
+  print("Este es el primer if")
+  if (nat %% 2 == 0) {
+    print("Este es el segundo if")
+
+  }
+}
+
+
+# Sintaxis del condicional if anidado
+if (condition) { # Apertura del primer if
+  if (condition) { # Apertura del segundo if
+    if (condition) {
+      
+    }
+  } # Cierre del segundo if
+} # Cierre del primer if
+
+# Crear una variable llamada "num"
+num <- -2
+
+# Sentencias if-else anidadas
+if (num > 0) {
+  if (num %% 2 == 0) {
+    print("Este es un número par positivo")
+  }
+} else {
+  if (num %% 2 == 0) {
+    print("Este es un número par negativo")
+
+  }
+}
+
+
+
+
+
+if (condition) {
+  if (condition) {
+    
+  }
+}
+
+
+# Determinar el desempeño de un(a) estudiante
+# Escribir variables con los promedios
+t <- 9.5
+e <- 8.3
+p <- 9.5
+
+# Calcular el promedio general
+calf <- (e * 0.6) + (t * 0.2) + (p * 0.2)
+
+# Determinar si el o la estudiante aprobó
+if (e >= 8) {
+  if (t >= 9 & p >= 9) {
+    if (calf >= 8.5) {
+      print(paste("Aprobado(a) tu calificación es", calf))
+    }
+  }
+}
+
+
+if (e >= 8 & t >= 9 & p >= 9 & calf >= 8.5) {
+  print(paste("Aprobado(a) tu calificación es", calf))
+
 
 
 
